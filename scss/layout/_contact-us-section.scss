@@ -89,15 +89,11 @@
   }
 
   &__contact-btn {
-    width: 100%;
-    max-width: 143px;
     border-radius: 4px;
     padding: 8px 24px;
     font-size: 16px;
-    height: 35px;
 
     @media screen and (min-width: $bp-desktop) {
-      max-width: 171px;
       border-radius: 8px;
       padding: 16px 32px;
       font-size: 18px;

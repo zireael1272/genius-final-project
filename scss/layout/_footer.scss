@@ -124,12 +124,16 @@
   }
 
   &__btn {
-    width: 126px;
-    height: 35px;
     border-radius: 4px;
     box-sizing: border-box;
     padding: 8px 24px;
     font-size: 16px;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 16px 32px;
+      font-size: 18px;
+      border-radius: 8px;
+    }
   }
 
   &__dog {
