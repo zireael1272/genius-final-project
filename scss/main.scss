@@ -1,0 +1,26 @@
+@import "./base";
+@import "./general";
+
+@import "./utils/variables";
+@import "./utils/fonts";
+@import "./utils/texts";
+@import "./utils/utils";
+
+@import "./components/link";
+@import "./components/buttons";
+@import "./components/pagination";
+
+@import "./layout/header";
+@import "./layout/form";
+@import "./layout/modal";
+@import "./layout/mobile-menu";
+@import "./layout/card";
+@import "./layout/hero-section";
+@import "./layout/less-talk-section";
+@import "./layout/services-section";
+@import "./layout/happy-customer-section";
+@import "./layout/contact-us-section";
+@import "./layout/nutrition-hero-section";
+@import "./layout/nutrition-product-section";
+@import "./layout/swiper-product";
+@import "./layout/footer";

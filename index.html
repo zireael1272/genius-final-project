@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/scss/main.min.css" />
+
+    <title>Dog Club</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img src="/images/paw.png" alt="" class="paw paw-header rotate-paw" />
+        <div class="header__container">
+          <a href="/">
+            <svg class="icon-logo orange" width="182" height="43">
+              <use href="/images/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <ul class="header__menu">
+            <li>
+              <a href="#less-talk-section" class="link">Less talk</a>
+            </li>
+            <li>
+              <a href="#services-section" class="link">Services category</a>
+            </li>
+            <li>
+              <a href="#happy-customer-section" class="link">Happy customer </a>
+            </li>
+            <li>
+              <a href="#contact-us-section" class="link">Contact</a>
+            </li>
+          </ul>
+          <nav class="header__nav">
+            <a href="#">
+              <svg class="icon-basket orange" width="32" height="32">
+                <use href="/images/icons.svg#icon-basket"></use>
+              </svg>
+            </a>
+            <button type="button" class="contact-btn btn">Contact us</button>
+            <button type="button" class="header__burger menu-btn-open">
+              <svg class="icon-burger-menu orange" width="24" height="24">
+                <use href="/images/icons.svg#icon-burger-menu"></use>
+              </svg>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu">
+      <img src="/images/paw.png" alt="" class="paw mobile-menu__paw-1" />
+      <img src="/images/paw.png" alt="" class="paw mobile-menu__paw-2" />
+      <img src="/images/paw.png" alt="" class="paw mobile-menu__paw-3" />
+      <img src="/images/paw.png" alt="" class="paw mobile-menu__paw-4" />
+      <img src="/images/paw.png" alt="" class="paw mobile-menu__paw-5 rotate-paw" />
+      <img src="/images/paw.png" alt="" class="paw mobile-menu__paw-6 rotate-paw" />
+      <img src="/images/paw.png" alt="" class="paw mobile-menu__paw-7 rotate-paw" />
+      <div class="mobile-menu__container">
+        <div class="mobile-menu__head">
+          <a href="/">
+            <svg class="mobile-menu__icon-logo orange" width="92" height="20">
+              <use href="/images/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <button class="mobile-menu__btn-close menu-btn-close" type="button">
+            <img src="/images/menu-to-close-transition.png" alt="close" />
+          </button>
+        </div>
+
+        <ul class="mobile-menu__nav">
+          <li>
+            <a href="#less-talk-section" class="mobile-menu__link link">Less talk</a>
+          </li>
+          <li>
+            <a href="#services-section" class="mobile-menu__link link"
+              >Services category</a
+            >
+          </li>
+          <li>
+            <a href="#happy-customer-section" class="mobile-menu__link link"
+              >Happy customer
+            </a>
+          </li>
+          <li>
+            <a href="#contact-us-section" class="mobile-menu__link link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="mobile-menu__social">
+          <a href="#" class="inst">
+            <svg class="icon-instagram" width="32" height="32">
+              <use href="/images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+          <a href="#" class="facebook orange">
+            <svg class="icon-facebook" width="32" height="32">
+              <use href="/images/icons.svg#icon-facebook"></use></svg
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero__section section" id="hero-section">
+        <div class="hero__container container">
+          <img src="/images/paw.png" alt="" class="paw hero__paw-1" />
+          <img src="/images/paw.png" alt="" class="paw hero__paw-2 rotate-paw" />
+          <div class="hero__content">
+            <h1 class="hero__title font-Rowdies">Taking care for your Smart Dog!</h1>
+            <div class="hero__nav">
+              <p class="hero__description">
+                Human–canine bonding is the relationship between dogs and humans
+              </p>
+              <button type="button" class="explore-btn btn">Explore More</button>
+            </div>
+          </div>
+          <div class="hero__dog">
+            <svg class="icon-hero-arrow" width="64" height="48">
+              <use href="/images/icons.svg#icon-hero-arrow"></use>
+            </svg>
+            <svg class="icon-orange-paw" width="42" height="42">
+              <use href="/images/icons.svg#icon-orange-paw"></use>
+            </svg>
+            <svg class="icon-pink-paw" width="42" height="42">
+              <use href="/images/icons.svg#icon-pink-paw"></use>
+            </svg>
+            <svg class="icon-purple-paw" width="42" height="42">
+              <use href="/images/icons.svg#icon-purple-paw"></use>
+            </svg>
+            <img src="/images/haski.png" alt="" class="hero__haski" />
+            <img src="/images/taksa.png" alt="" class="hero__taksa" />
+            <img src="/images/puppy.png" alt="" class="hero__puppy" />
+            <img src="/images/dog.png" alt="Dog" class="hero-dog" />
+          </div>
+        </div>
+      </section>
+      <section class="less-talk__section section" id="less-talk-section">
+        <div class="less-talk__container container">
+          <img src="/images/paw.png" alt="" class="paw paw-less-talk-1 rotate-paw" />
+          <img src="/images/paw.png" alt="" class="paw paw-less-talk-2" />
+          <img src="/images/paw.png" alt="" class="paw paw-less-talk-3 rotate-paw" />
+          <div class="less-talk__dog">
+            <img src="/images/paw_learn_more.png" alt="" class="paw-learn-more-1" />
+            <img src="/images/paw_learn_more.png" alt="" class="paw-learn-more-2" />
+            <img src="/images/paw_learn_more.png" alt="" class="paw-learn-more-3" />
+            <img src="/images/shetland-sheepdog.png" alt="" class="dog-learn-more" />
+            <a href="#">
+              <img src="/images/video.png" alt="" class="video-learn-more" />
+            </a>
+            <img src="/images/Vector_less_talk.png" alt="" />
+          </div>
+          <div class="less-talk__content">
+            <h2 class="less-talk__title title-section font-Rowdies">
+              Less talk
+              <svg class="icon-less-arrow" width="48" height="40">
+                <use href="/images/icons.svg#icon-hero-arrow"></use>
+              </svg>
+
+              <br class="mobile-break" />
+
+              and more walk
+            </h2>
+            <div class="less-talk__nav">
+              <p class="less-talk__text">
+                Sometimes our career, lifestyle, or routines can make it difficult to
+                provide your pet with the recommended amount of exercise that they
+                need. Which is why, it’s okay to use an extra hand in walking dogs so
+                they are in perfect shape, mentally and physically.
+              </p>
+              <div class="less-talk__buttons-container">
+                <button type="button" class="explore-btn btn">Explore More</button>
+                <a href="#">
+                  <img
+                    src="/images/video.png"
+                    alt=""
+                    class="video-learn-more-mobile"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services__section section" id="services-section">
+        <div class="services__container">
+          <img src="/images/arrow.png" alt="" class="services__arrow" />
+          <h2 class="services__title title-section font-Rowdies">
+            Services category
+          </h2>
+          <div class="services__nav-container">
+            <ul class="services__nav">
+              <a href="#" class="services__link">
+                <li class="services__card">
+                  <svg class="icon-grooming black" width="96" height="96">
+                    <use href="./images/icons.svg#icon-grooming"></use>
+                  </svg>
+                  Grooming
+                </li></a
+              >
+              <a href="nutrition.html" class="services__link">
+                <li class="services__card">
+                  <svg class="icon-nutrition black" width="96" height="96">
+                    <use href="./images/icons.svg#icon-nutrition"></use>
+                  </svg>
+                  Nutrition
+                </li>
+              </a>
+              <a href="#" class="services__link">
+                <li class="services__card">
+                  <svg class="icon-training black" width="96" height="96">
+                    <use href="./images/icons.svg#icon-training"></use>
+                  </svg>
+                  Training
+                </li>
+              </a>
+              <a href="#" class="services__link">
+                <li class="services__card">
+                  <svg class="icon-bathing black" width="96" height="96">
+                    <use href="./images/icons.svg#icon-bathing"></use>
+                  </svg>
+                  Bathing
+                </li>
+              </a>
+              <li class="services__link">
+                <a href="#" class="services__more-link">
+                  more services
+                  <svg class="icon-arrow orange" width="87" height="32">
+                    <use href="/images/icons.svg#icon-arrow"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="happy-customer__section section" id="happy-customer-section">
+        <div class="happy-customer__container container">
+          <img
+            src="/images/paw.png"
+            alt=""
+            class="paw paw-happy-customer-1 rotate-paw"
+          />
+          <img src="/images/paw.png" alt="" class="paw paw-happy-customer-2" />
+          <img src="/images/paw.png" alt="" class="paw paw-happy-customer-3" />
+          <h2 class="title-section font-Rowdies happy-customer__title">
+            Happy customer
+          </h2>
+          <div class="happy-customer__slider">
+            <button type="button" class="carousel-button prev">
+              <svg class="icon-Arrow-slider" width="44" height="44">
+                <use href="/images/icons.svg#icon-Arrow-slider"></use>
+              </svg>
+            </button>
+            <div class="swiper-container">
+              <ul class="happy-customer__cards-container swiper-wrapper">
+                <li class="swiper-slide">
+                  <article class="card">
+                    <img
+                      class="card-image"
+                      src="/images/christin.jpg"
+                      alt="Customer"
+                    />
+                    <div class="card-info">
+                      <div class="customer-info">
+                        <h3 class="customer-name">Christin & Tom</h3>
+                        <p class="customer-phrase">
+                          Love the overall workout experience!
+                        </p>
+                      </div>
+                      <div class="grade-container">
+                        <div class="bones">
+                          <svg class="icon-bone orange" width="32" height="14">
+                            <use href="/images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="icon-bone orange" width="32" height="14">
+                            <use href="/images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="icon-bone orange" width="32" height="14">
+                            <use href="/images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="icon-bone orange" width="32" height="14">
+                            <use href="/images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="icon-bone orange" width="32" height="14">
+                            <use href="/images/icons.svg#icon-bone"></use>
+                          </svg>
+                        </div>
+                        <p class="grade">5/5</p>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="card">
+                    <img class="card-image" src="/images/anna.jpg" alt="Customer" />
+                    <div class="card-info">
+                      <div class="customer-info">
+                        <h3 class="customer-name">Anna & Tobby</h3>
+                        <p class="customer-phrase">
+                          Amazing Products & Delivery on time.
+                        </p>
+                      </div>
+                      <div class="grade-container">
+                        <div class="bones">
+                          <svg class="icon-bone orange" width="32" height="14">
+                            <use href="/images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="icon-bone orange" width="32" height="14">
+                            <use href="/images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="icon-bone orange" width="32" height="14">
+                            <use href="/images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="icon-bone orange" width="32" height="14">
+                            <use href="/images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="icon-bone" width="32" height="14">
+                            <use href="/images/icons.svg#icon-bone"></use>
+                          </svg>
+                        </div>
+                        <p class="grade">4/5</p>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="card">
+                    <img class="card-image" src="/images/sindy.jpg" alt="Customer" />
+                    <div class="card-info">
+                      <div class="customer-info">
+                        <h3 class="customer-name">Sindy & Kitch</h3>
+                        <p class="customer-phrase">Great job with the trainer!</p>
+                      </div>
+                      <div class="grade-container">
+                        <div class="bones">
+                          <svg class="icon-bone orange" width="32" height="14">
+                            <use href="/images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="icon-bone orange" width="32" height="14">
+                            <use href="/images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="icon-bone orange" width="32" height="14">
+                            <use href="/images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="icon-bone orange" width="32" height="14">
+                            <use href="/images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="icon-bone orange" width="32" height="14">
+                            <use href="/images/icons.svg#icon-bone"></use>
+                          </svg>
+                        </div>
+                        <p class="grade">5/5</p>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="card">
+                    <img
+                      class="card-image"
+                      src="/images/christin.jpg"
+                      alt="Customer"
+                    />
+                    <div class="card-info">
+                      <div class="customer-info">
+                        <h3 class="customer-name">Christin & Tom</h3>
+                        <p class="customer-phrase">
+                          Love the overall workout experience!
+                        </p>
+                      </div>
+                      <div class="grade-container">
+                        <div class="bones">
+                          <svg class="icon-bone orange" width="32" height="14">
+                            <use href="/images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="icon-bone orange" width="32" height="14">
+                            <use href="/images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="icon-bone orange" width="32" height="14">
+                            <use href="/images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="icon-bone orange" width="32" height="14">
+                            <use href="/images/icons.svg#icon-bone"></use>
+                          </svg>
+                          <svg class="icon-bone orange" width="32" height="14">
+                            <use href="/images/icons.svg#icon-bone"></use>
+                          </svg>
+                        </div>
+                        <p class="grade">5/5</p>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+              <div class="pagination"></div>
+            </div>
+            <button type="button" class="carousel-button next">
+              <svg class="icon-Arrow-slider" width="44" height="44">
+                <use href="/images/icons.svg#icon-Arrow-slider"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="contact-us__section section" id="contact-us-section">
+        <img src="/images/paw.png" alt="" class="paw contact-us__paw-1 rotate-paw" />
+        <img src="/images/paw.png" alt="" class="paw contact-us__paw-2" />
+        <div class="contact-us__back-elements">
+          <svg class="icon-contact-element white" width="32" height="32">
+            <use href="/images/icons.svg#icon-contact-element"></use>
+          </svg>
+          <svg class="icon-contact-paw-1 white" width="32" height="32">
+            <use href="/images/icons.svg#icon-contact-paw"></use>
+          </svg>
+          <svg class="icon-contact-paw-2 white" width="32" height="32">
+            <use href="/images/icons.svg#icon-contact-paw"></use>
+          </svg>
+          <svg class="icon-contact-bone-1 white" width="32" height="32">
+            <use href="/images/icons.svg#icon-contact-bone"></use>
+          </svg>
+          <svg class="icon-contact-bone-2 white" width="32" height="32">
+            <use href="/images/icons.svg#icon-contact-bone"></use>
+          </svg>
+        </div>
+
+        <div class="contact-us__content">
+          <div class="dog-walking">
+            <img src="/images/dog-walking.png" alt="" />
+          </div>
+          <div class="contact-us__container container">
+            <form class="contact-us__form">
+              <div class="contact-us__text">
+                <h2 class="contact-us__title title-section font-Rowdies">
+                  Our experts will take care of your friend
+                </h2>
+                <p class="contact-us__description">
+                  Fill out the form so we can contact you!
+                </p>
+              </div>
+              <div class="modal-input-container">
+                <div class="contact-section__form-field input">
+                  <label class="input__label" for="full-name">
+                    <svg class="icon-fluent_people orange" width="32" height="32">
+                      <use href="images/icons.svg#icon-fluent_people"></use>
+                    </svg>
+                  </label>
+                  <input
+                    class="input__control"
+                    type="text"
+                    name="full-name"
+                    id="full-name"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div class="contact-section__form-field input">
+                  <label class="input__label" for="pet-name">
+                    <svg class="icon-dog orange" width="32" height="32">
+                      <use href="images/icons.svg#icon-dog"></use>
+                    </svg>
+                  </label>
+                  <input
+                    class="input__control"
+                    type="text"
+                    name="pet-name"
+                    id="pet-name"
+                    placeholder="Pet name"
+                  />
+                </div>
+                <div class="contact-section__form-field input">
+                  <label class="input__label" for="your-phone">
+                    <svg class="icon-phone orange" width="32" height="32">
+                      <use href="images/icons.svg#icon-phone"></use>
+                    </svg>
+                  </label>
+                  <input
+                    class="input__control"
+                    type="text"
+                    name="your-phone"
+                    id="your-phone"
+                    placeholder="Your phone"
+                  />
+                </div>
+                <div class="contact-section__form-field input">
+                  <label class="input__label" for="your-email">
+                    <svg class="icon-alternate-email orange" width="32" height="32">
+                      <use href="images/icons.svg#icon-alternate-email"></use>
+                    </svg>
+                  </label>
+                  <input
+                    class="input__control"
+                    type="text"
+                    name="your-email"
+                    id="your-email"
+                    placeholder="Your email"
+                  />
+                </div>
+                <div class="modal-control">
+                  <button type="submit" class="contact-us__contact-btn btn">
+                    Contact us
+                  </button>
+                  <p class="form-terms">
+                    <input type="checkbox" />
+                    I agree to the privacy policy
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="contact-us-dog">
+            <img src="/images/contact_us_dog.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__dog">
+          <img src="/images/footer_dog.png" alt="" class="footer-dog" />
+        </div>
+        <div class="footer__navigation">
+          <div class="footer__nav">
+            <a href="/">
+              <svg class="icon-logo-footer orange" width="192" height="40">
+                <use href="/images/icons.svg#icon-logo-footer"></use>
+              </svg>
+            </a>
+            <div class="footer__social">
+              <a href="#" class="inst">
+                <svg class="icon-instagram" width="40" height="40">
+                  <use href="/images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a href="#" class="facebook orange">
+                <svg class="icon-facebook" width="40" height="40">
+                  <use href="/images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </div>
+          </div>
+          <ul class="footer__menu">
+            <li>
+              <a href="#less-talk-section" class="footer__link">Less talk</a>
+            </li>
+            <li>
+              <a href="#services-section" class="footer__link">Services category</a>
+            </li>
+            <li>
+              <a href="#happy-customer-section" class="footer__link"
+                >Happy customer
+              </a>
+            </li>
+            <li>
+              <a href="#contact-us-section" class="footer__link">Contact</a>
+            </li>
+          </ul>
+          <div class="footer__form">
+            <div class="footer__form-field input">
+              <label class="input__label" for="your-email-footer">
+                <svg class="icon-alternate-email orange" width="24" height="24">
+                  <use href="images/icons.svg#icon-alternate-email"></use>
+                </svg>
+              </label>
+              <input
+                class="input__control"
+                type="text"
+                name="your-email-footer"
+                id="your-email-footer"
+                placeholder="Your email"
+              />
+            </div>
+            <div class="footer__form-field input">
+              <label class="input__label visualy-hidden" for="your-cmc"> </label>
+              <input
+                class="input__control"
+                type="text"
+                name="your-cmc"
+                id="your-cmc"
+                placeholder="Your cmc"
+              />
+            </div>
+            <div class="modal-control footer__control">
+              <button type="submit" class="footer__btn btn">Contact us</button>
+              <p class="form-terms">
+                <input type="checkbox" />
+                I agree to the privacy policy
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button type="button" class="modal-btn-close">
+          <img src="/images/close.png" alt="close" />
+        </button>
+        <div class="modal__content">
+          <div class="contact-us__text">
+            <h2 class="contact-us__title title-section font-Rowdies">
+              Our experts will take care of your friend
+            </h2>
+            <p class="contact-us__description">
+              Fill out the form so we can contact you!
+            </p>
+          </div>
+          <form class="modal__form" name="modal-form" autocomplete="off">
+            <div class="modal-input-container">
+              <div class="contact-section__form-field input">
+                <label class="input__label" for="full-name">
+                  <svg class="icon-fluent_people orange" width="32" height="32">
+                    <use href="images/icons.svg#icon-fluent_people"></use>
+                  </svg>
+                </label>
+                <input
+                  class="input__control"
+                  type="text"
+                  name="full-name"
+                  id="full-name"
+                  placeholder="Your name"
+                />
+              </div>
+              <div class="contact-section__form-field input">
+                <label class="input__label" for="pet-name">
+                  <svg class="icon-dog orange" width="32" height="32">
+                    <use href="images/icons.svg#icon-dog"></use>
+                  </svg>
+                </label>
+                <input
+                  class="input__control"
+                  type="text"
+                  name="pet-name"
+                  id="pet-name"
+                  placeholder="Pet name"
+                />
+              </div>
+              <div class="contact-section__form-field input">
+                <label class="input__label" for="your-phone">
+                  <svg class="icon-phone orange" width="32" height="32">
+                    <use href="images/icons.svg#icon-phone"></use>
+                  </svg>
+                </label>
+                <input
+                  class="input__control"
+                  type="text"
+                  name="your-phone"
+                  id="your-phone"
+                  placeholder="Your phone"
+                />
+              </div>
+              <div class="contact-section__form-field input">
+                <label class="input__label" for="your-email">
+                  <svg class="icon-alternate-email orange" width="32" height="32">
+                    <use href="images/icons.svg#icon-alternate-email"></use>
+                  </svg>
+                </label>
+                <input
+                  class="input__control"
+                  type="text"
+                  name="your-email"
+                  id="your-email"
+                  placeholder="Your email"
+                />
+              </div>
+              <div class="modal-control">
+                <button type="submit" class="contact-btn btn">Contact us</button>
+                <p class="form-terms">
+                  <input type="checkbox" />
+                  I agree to the privacy policy
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/modal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/swiper.js"></script>
+    <script src="/js/mobile.js"></script>
+  </body>
+</html>

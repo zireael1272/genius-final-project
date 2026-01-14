@@ -1,0 +1,183 @@
+.contact-us {
+  &__section {
+    position: relative;
+    z-index: 1;
+    padding: 72px 20px;
+    background: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 168px 0 74px 0;
+    }
+  }
+
+  &__section::before {
+    content: "";
+    position: absolute;
+    background: url(/images/contact-us-background-mobile.png) no-repeat;
+    z-index: -1;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 100px);
+    background-size: cover;
+    background-position: top;
+
+    @media screen and (min-width: $bp-desktop) {
+      background: url(/images/contact-us-background.png) no-repeat;
+      left: 0;
+      width: 100%;
+      background-size: cover;
+      background-position: top center;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 42px;
+      width: 600px;
+      height: 595px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__title {
+    text-align: center;
+    line-height: 100%;
+    font-size: 32px;
+    max-width: 254px;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 52px;
+      max-width: 600px;
+    }
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.3;
+    color: var(--blue-grey-info);
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 18px;
+    }
+  }
+
+  &__back-elements {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+
+  &__contact-btn {
+    width: 100%;
+    max-width: 143px;
+    border-radius: 4px;
+    padding: 8px 24px;
+    font-size: 16px;
+    height: 35px;
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 171px;
+      border-radius: 8px;
+      padding: 16px 32px;
+      font-size: 18px;
+    }
+  }
+
+  &__paw-1 {
+    width: 56px;
+    height: 56px;
+    bottom: -8px;
+    left: -8px;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+
+  &__paw-2 {
+    width: 32px;
+    height: 32px;
+    bottom: -1px;
+    left: 332px;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+}
+
+.dog-walking {
+  display: none;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+  }
+}
+
+.contact-us-dog {
+  display: none;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+  }
+}
+
+.icon-contact-element {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 252px;
+}
+
+.icon-contact-paw-1 {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 177px;
+  left: 272px;
+}
+
+.icon-contact-paw-2 {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 80px;
+  left: 1180px;
+}
+
+.icon-contact-bone-1 {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 179px;
+  left: 602px;
+}
+
+.icon-contact-bone-2 {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 181px;
+  left: 1783px;
+}

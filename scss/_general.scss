@@ -1,0 +1,31 @@
+.section {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 100px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1224px;
+  margin: 0 auto;
+}
+
+.orange {
+  fill: var(--main-brand-color);
+}
+
+.black {
+  fill: var(--main-text-color);
+}
+
+.white {
+  fill: var(--white);
+}
+
+.paw {
+  position: absolute;
+}
+
+.rotate-paw {
+  transform: rotate(90deg);
+}

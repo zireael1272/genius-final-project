@@ -1,0 +1,90 @@
+.nutrition-hero {
+  &__section {
+    position: relative;
+    margin-top: 40px;
+    padding: 32px 20px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-top: 120px;
+      padding: 40px 100px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 5;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    color: var(--main-brand-color);
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 56px;
+    }
+  }
+
+  &__filter {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      z-index: 5;
+    }
+  }
+
+  &__filter-mobile {
+    position: relative;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+
+  &__nutrition-paw {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+}
+
+.sort {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 5%;
+}
+
+.group-btn-sort {
+  display: flex;
+}
+
+.sort-btn {
+  border: 1px solid var(--blue-grey-info);
+  background: transparent;
+  padding: 8px;
+  margin-left: -1px;
+  opacity: 1;
+  gap: 8px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.sort-btn.active {
+  background-color: var(--main-brand-color);
+  color: var(--white);
+}

@@ -1,0 +1,92 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  padding: 16px 0;
+  z-index: 1;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 32px 0;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 115px;
+      padding: 0;
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      align-items: center;
+      gap: 48px;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 24px;
+    }
+  }
+
+  &__burger {
+    display: block;
+    background: transparent;
+    border: none;
+    width: 24px;
+    height: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+}
+
+.paw-header {
+  display: none;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+    top: 43px;
+    left: 800px;
+    z-index: -2;
+  }
+}
+
+.icon-logo {
+  width: 92px;
+  height: 20px;
+
+  @media screen and (min-width: $bp-desktop) {
+    width: 182px;
+    height: 43px;
+  }
+}
+
+.icon-basket {
+  width: 24px;
+  height: 24px;
+
+  @media screen and (min-width: $bp-desktop) {
+    width: 40px;
+    height: 40px;
+  }
+}

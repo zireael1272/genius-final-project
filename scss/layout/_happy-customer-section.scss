@@ -1,0 +1,141 @@
+.happy-customer {
+  &__section {
+    padding: 20px;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 12px 90px 0 90px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 48px;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 52px;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.swiper-container {
+  display: block;
+  position: relative;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.swiper-wrapper {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.swiper-slide {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.customer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.customer-name {
+  font-size: 24px;
+  margin: 0 auto;
+  line-height: 100%;
+}
+
+.customer-phrase {
+  font-size: 16px;
+  line-height: 100%;
+  white-space: nowrap;
+}
+
+.swiper-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  gap: 16px;
+
+  @media screen and (min-width: $bp-desktop) {
+    gap: 32px;
+  }
+}
+
+.grade-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.bones {
+  display: flex;
+  gap: 8px;
+  fill: #f1f3ff;
+}
+
+.grade {
+  font-size: 16px;
+  color: var(--main-brand-color);
+}
+
+.paw-happy-customer-1 {
+  bottom: -28px;
+  left: 256px;
+  transform: scale(0.3) rotate(90deg);
+
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+    top: 0;
+    left: 76px;
+    transform: scale(1) rotate(90deg);
+  }
+}
+
+.paw-happy-customer-2 {
+  display: none;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+    right: 0;
+  }
+}
+
+.paw-happy-customer-3 {
+  left: -37px;
+  bottom: -26px;
+  transform: scale(0.5);
+
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+    left: -20px;
+    bottom: 12px;
+    transform: scale(2);
+  }
+}

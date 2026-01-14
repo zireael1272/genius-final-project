@@ -1,0 +1,806 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/scss/main.min.css" />
+    <title>Nutrition</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img src="/images/paw.png" alt="" class="paw paw-header rotate-paw" />
+        <div class="header__container">
+          <a href="/">
+            <svg class="icon-logo orange" width="182" height="43">
+              <use href="/images/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <ul class="header__menu">
+            <li>
+              <a href="/#less-talk-section" class="link">Less talk</a>
+            </li>
+            <li>
+              <a href="/#services-section" class="link">Services category</a>
+            </li>
+            <li>
+              <a href="/#happy-customer-section" class="link">Happy customer </a>
+            </li>
+            <li>
+              <a href="/#contact-us-section" class="link">Contact</a>
+            </li>
+          </ul>
+          <nav class="header__nav">
+            <a href="#">
+              <svg class="icon-basket orange" width="32" height="32">
+                <use href="/images/icons.svg#icon-basket"></use>
+              </svg>
+            </a>
+            <button type="button" class="contact-btn btn">Contact us</button>
+            <button type="button" class="header__burger menu-btn-open">
+              <svg class="icon-burger-menu orange" width="24" height="24">
+                <use href="/images/icons.svg#icon-burger-menu"></use>
+              </svg>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu">
+      <img src="/images/paw.png" alt="" class="paw mobile-menu__paw-1" />
+      <img src="/images/paw.png" alt="" class="paw mobile-menu__paw-2" />
+      <img src="/images/paw.png" alt="" class="paw mobile-menu__paw-3" />
+      <img src="/images/paw.png" alt="" class="paw mobile-menu__paw-4" />
+      <img src="/images/paw.png" alt="" class="paw mobile-menu__paw-5 rotate-paw" />
+      <img src="/images/paw.png" alt="" class="paw mobile-menu__paw-6 rotate-paw" />
+      <img src="/images/paw.png" alt="" class="paw mobile-menu__paw-7 rotate-paw" />
+      <div class="mobile-menu__container">
+        <div class="mobile-menu__head">
+          <a href="/">
+            <svg class="mobile-menu__icon-logo orange" width="92" height="20">
+              <use href="/images/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <button class="mobile-menu__btn-close menu-btn-close" type="button">
+            <img src="/images/menu-to-close-transition.png" alt="close" />
+          </button>
+        </div>
+
+        <ul class="mobile-menu__nav">
+          <li>
+            <a href="/#less-talk-section" class="mobile-menu__link link"
+              >Less talk</a
+            >
+          </li>
+          <li>
+            <a href="/#services-section" class="mobile-menu__link link"
+              >Services category</a
+            >
+          </li>
+          <li>
+            <a href="/#happy-customer-section" class="mobile-menu__link link"
+              >Happy customer
+            </a>
+          </li>
+          <li>
+            <a href="#/contact-us-section" class="mobile-menu__link link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="mobile-menu__social">
+          <a href="#" class="inst">
+            <svg class="icon-instagram" width="32" height="32">
+              <use href="/images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+          <a href="#" class="facebook orange">
+            <svg class="icon-facebook" width="32" height="32">
+              <use href="/images/icons.svg#icon-facebook"></use></svg
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="nutrition-hero__section section">
+        <img
+          src="/images/paw.png"
+          alt=""
+          class="paw hero__paw-1 hero__nutrition-paw"
+        />
+        <div class="nutrition-hero__container container">
+          <h1 class="nutrition-hero__title font-Rowdies">Nutrition</h1>
+          <div class="nutrition-hero__filter">
+            <p class="sort orange-text">Sorting:</p>
+            <div class="group-btn-sort">
+              <button type="button" class="sort-btn">Popularity</button>
+              <button type="button" class="sort-btn">Cheaper first</button>
+              <button type="button" class="sort-btn">More expensive first</button>
+              <button type="button" class="sort-btn">By name</button>
+              <button type="button" class="sort-btn active">New ones first</button>
+            </div>
+          </div>
+          <div class="nutrition-hero__filter-mobile">
+            <button type="button" class="mobile-sort-trigger" id="mobileSortBtn">
+              <svg class="icon-sort-mobile orange" width="24" height="24">
+                <use href="/images/icons.svg#icon-sort-mobile"></use>
+              </svg>
+              <span class="current-sort-value">New ones first</span>
+            </button>
+
+            <div class="mobile-sort-overlay" id="mobileSortModal">
+              <div class="mobile-sort-content">
+                <h3 class="mobile-sort-title">Sorting</h3>
+                <ul class="mobile-sort-list">
+                  <li class="mobile-sort-item">
+                    Popularity
+                    <svg class="icon-arrow-rounded" width="14" height="14">
+                      <use href="/images/icons.svg#icon-arrow-rounded"></use>
+                    </svg>
+                  </li>
+                  <li class="mobile-sort-item">
+                    Cheaper first
+                    <svg class="icon-arrow-rounded" width="14" height="14">
+                      <use href="/images/icons.svg#icon-arrow-rounded"></use>
+                    </svg>
+                  </li>
+                  <li class="mobile-sort-item">
+                    More expensive first
+                    <svg class="icon-arrow-rounded" width="14" height="14">
+                      <use href="/images/icons.svg#icon-arrow-rounded"></use>
+                    </svg>
+                  </li>
+                  <li class="mobile-sort-item">
+                    By name
+                    <svg class="icon-arrow-rounded" width="14" height="14">
+                      <use href="/images/icons.svg#icon-arrow-rounded"></use>
+                    </svg>
+                  </li>
+                  <li class="mobile-sort-item active">
+                    New ones first
+                    <svg class="icon-arrow-rounded orange" width="14" height="14">
+                      <use href="/images/icons.svg#icon-arrow-rounded"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product__section section">
+        <img src="/images/paw.png" alt="" class="paw paw-nutrition-1 rotate-paw" />
+        <img src="/images/paw.png" alt="" class="paw paw-nutrition-2" />
+        <img src="/images/paw.png" alt="" class="paw paw-nutrition-3 rotate-paw" />
+
+        <div class="product__slider swiper container">
+          <ul class="swiper-wrapper" id="product-container">
+            <li class="product__card swiper-slide" data-rating="4" data-price="136">
+              <img src="/images/product1.jpg" alt="" class="img-product" />
+              <div class="product__card-text">
+                <div class="product__evaluation-container">
+                  <p class="product__vendor-code">Vendor code: 37875</p>
+                  <div class="product__stars-container">
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="product__description">
+                  Dry food for dogs of average breeds Savory 3 kg (turkey and lamb)
+                </p>
+                <div class="product__price-container">
+                  <p class="product__price">136.00$</p>
+                  <p class="product__sale">320.43$</p>
+                </div>
+              </div>
+              <button type="button" class="buy-btn btn">Buy</button>
+            </li>
+            <li class="product__card swiper-slide" data-rating="5" data-price="140">
+              <img src="/images/product2.jpg" alt="" class="img-product" />
+              <div class="product__card-text">
+                <div class="product__evaluation-container">
+                  <p class="product__vendor-code">Vendor code: 34905</p>
+                  <div class="product__stars-container">
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="product__description">
+                  Dry food for dogs of small breeds Savory 3 kg (lamb)
+                </p>
+                <div class="product__price-container">
+                  <p class="product__price">140.00$</p>
+                  <p class="product__sale">320.43$</p>
+                </div>
+              </div>
+              <button type="button" class="buy-btn btn">Buy</button>
+            </li>
+            <li class="product__card swiper-slide" data-rating="5" data-price="136">
+              <img src="/images/product3.jpg" alt="" class="img-product" />
+              <div class="product__card-text">
+                <div class="product__evaluation-container">
+                  <p class="product__vendor-code">Vendor code: 00027</p>
+                  <div class="product__stars-container">
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="product__description">
+                  Dry food for dogs of all breeds Savory 3 kg (rabbit and duck)
+                </p>
+                <div class="product__price-container">
+                  <p class="product__price">136.00$</p>
+                  <p class="product__sale">320.43$</p>
+                </div>
+              </div>
+              <button type="button" class="buy-btn btn">Buy</button>
+            </li>
+            <li class="product__card swiper-slide" data-rating="5" data-price="346">
+              <img src="/images/product3.jpg" alt="" class="img-product" />
+              <div class="product__card-text">
+                <div class="product__evaluation-container">
+                  <p class="product__vendor-code">Vendor code: 00028</p>
+                  <div class="product__stars-container">
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="product__description">
+                  Dry food for dogs of all breeds Savory 5 kg (rabbit and duck)
+                </p>
+                <div class="product__price-container">
+                  <p class="product__price">346.00$</p>
+                  <p class="product__sale">450.43$</p>
+                </div>
+              </div>
+              <button type="button" class="buy-btn btn">Buy</button>
+            </li>
+            <li class="product__card swiper-slide" data-rating="5" data-price="140">
+              <img src="/images/product2.jpg" alt="" class="img-product" />
+              <div class="product__card-text">
+                <div class="product__evaluation-container">
+                  <p class="product__vendor-code">Vendor code: 34905</p>
+                  <div class="product__stars-container">
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="product__description">
+                  Dry food for dogs of small breeds Savory 3 kg (lamb)
+                </p>
+                <div class="product__price-container">
+                  <p class="product__price">140.00$</p>
+                  <p class="product__sale">320.43$</p>
+                </div>
+              </div>
+              <button type="button" class="buy-btn btn">Buy</button>
+            </li>
+            <li class="product__card swiper-slide" data-rating="5" data-price="136">
+              <img src="/images/product3.jpg" alt="" class="img-product" />
+              <div class="product__card-text">
+                <div class="product__evaluation-container">
+                  <p class="product__vendor-code">Vendor code: 00027</p>
+                  <div class="product__stars-container">
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="product__description">
+                  Dry food for dogs of all breeds Savory 3 kg (rabbit and duck)
+                </p>
+                <div class="product__price-container">
+                  <p class="product__price">136.00$</p>
+                  <p class="product__sale">320.43$</p>
+                </div>
+              </div>
+              <button type="button" class="buy-btn btn">Buy</button>
+            </li>
+            <li class="product__card swiper-slide" data-rating="4" data-price="136">
+              <img src="/images/product1.jpg" alt="" class="img-product" />
+              <div class="product__card-text">
+                <div class="product__evaluation-container">
+                  <p class="product__vendor-code">Vendor code: 37875</p>
+                  <div class="product__stars-container">
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="product__description">
+                  Dry food for dogs of average breeds Savory 3 kg (turkey and lamb)
+                </p>
+                <div class="product__price-container">
+                  <p class="product__price">136.00$</p>
+                  <p class="product__sale">320.43$</p>
+                </div>
+              </div>
+              <button type="button" class="buy-btn btn">Buy</button>
+            </li>
+            <li class="product__card swiper-slide" data-rating="5" data-price="346">
+              <img src="/images/product3.jpg" alt="" class="img-product" />
+              <div class="product__card-text">
+                <div class="product__evaluation-container">
+                  <p class="product__vendor-code">Vendor code: 00028</p>
+                  <div class="product__stars-container">
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="product__description">
+                  Dry food for dogs of all breeds Savory 5 kg (rabbit and duck)
+                </p>
+                <div class="product__price-container">
+                  <p class="product__price">346.00$</p>
+                  <p class="product__sale">450.43$</p>
+                </div>
+              </div>
+              <button type="button" class="buy-btn btn">Buy</button>
+            </li>
+            <li class="product__card swiper-slide" data-rating="4" data-price="136">
+              <img src="/images/product1.jpg" alt="" class="img-product" />
+              <div class="product__card-text">
+                <div class="product__evaluation-container">
+                  <p class="product__vendor-code">Vendor code: 37875</p>
+                  <div class="product__stars-container">
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="product__description">
+                  Dry food for dogs of average breeds Savory 3 kg (turkey and lamb)
+                </p>
+                <div class="product__price-container">
+                  <p class="product__price">136.00$</p>
+                  <p class="product__sale">320.43$</p>
+                </div>
+              </div>
+              <button type="button" class="buy-btn btn">Buy</button>
+            </li>
+            <li class="product__card swiper-slide" data-rating="5" data-price="140">
+              <img src="/images/product2.jpg" alt="" class="img-product" />
+              <div class="product__card-text">
+                <div class="product__evaluation-container">
+                  <p class="product__vendor-code">Vendor code: 34905</p>
+                  <div class="product__stars-container">
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="product__description">
+                  Dry food for dogs of small breeds Savory 3 kg (lamb)
+                </p>
+                <div class="product__price-container">
+                  <p class="product__price">140.00$</p>
+                  <p class="product__sale">320.43$</p>
+                </div>
+              </div>
+              <button type="button" class="buy-btn btn">Buy</button>
+            </li>
+            <li class="product__card swiper-slide" data-rating="5" data-price="136">
+              <img src="/images/product3.jpg" alt="" class="img-product" />
+              <div class="product__card-text">
+                <div class="product__evaluation-container">
+                  <p class="product__vendor-code">Vendor code: 00027</p>
+                  <div class="product__stars-container">
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="product__description">
+                  Dry food for dogs of all breeds Savory 3 kg (rabbit and duck)
+                </p>
+                <div class="product__price-container">
+                  <p class="product__price">136.00$</p>
+                  <p class="product__sale">320.43$</p>
+                </div>
+              </div>
+              <button type="button" class="buy-btn btn">Buy</button>
+            </li>
+            <li class="product__card swiper-slide" data-rating="5" data-price="346">
+              <img src="/images/product3.jpg" alt="" class="img-product" />
+              <div class="product__card-text">
+                <div class="product__evaluation-container">
+                  <p class="product__vendor-code">Vendor code: 00028</p>
+                  <div class="product__stars-container">
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="product__description">
+                  Dry food for dogs of all breeds Savory 5 kg (rabbit and duck)
+                </p>
+                <div class="product__price-container">
+                  <p class="product__price">346.00$</p>
+                  <p class="product__sale">450.43$</p>
+                </div>
+              </div>
+              <button type="button" class="buy-btn btn">Buy</button>
+            </li>
+            <li class="product__card swiper-slide" data-rating="5" data-price="140">
+              <img src="/images/product2.jpg" alt="" class="img-product" />
+              <div class="product__card-text">
+                <div class="product__evaluation-container">
+                  <p class="product__vendor-code">Vendor code: 34905</p>
+                  <div class="product__stars-container">
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="product__description">
+                  Dry food for dogs of small breeds Savory 3 kg (lamb)
+                </p>
+                <div class="product__price-container">
+                  <p class="product__price">140.00$</p>
+                  <p class="product__sale">320.43$</p>
+                </div>
+              </div>
+              <button type="button" class="buy-btn btn">Buy</button>
+            </li>
+            <li class="product__card swiper-slide" data-rating="5" data-price="136">
+              <img src="/images/product3.jpg" alt="" class="img-product" />
+              <div class="product__card-text">
+                <div class="product__evaluation-container">
+                  <p class="product__vendor-code">Vendor code: 00027</p>
+                  <div class="product__stars-container">
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="product__description">
+                  Dry food for dogs of all breeds Savory 3 kg (rabbit and duck)
+                </p>
+                <div class="product__price-container">
+                  <p class="product__price">136.00$</p>
+                  <p class="product__sale">320.43$</p>
+                </div>
+              </div>
+              <button type="button" class="buy-btn btn">Buy</button>
+            </li>
+            <li class="product__card swiper-slide" data-rating="4" data-price="136">
+              <img src="/images/product1.jpg" alt="" class="img-product" />
+              <div class="product__card-text">
+                <div class="product__evaluation-container">
+                  <p class="product__vendor-code">Vendor code: 37875</p>
+                  <div class="product__stars-container">
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="product__description">
+                  Dry food for dogs of average breeds Savory 3 kg (turkey and lamb)
+                </p>
+                <div class="product__price-container">
+                  <p class="product__price">136.00$</p>
+                  <p class="product__sale">320.43$</p>
+                </div>
+              </div>
+              <button type="button" class="buy-btn btn">Buy</button>
+            </li>
+            <li class="product__card swiper-slide" data-rating="5" data-price="346">
+              <img src="/images/product3.jpg" alt="" class="img-product" />
+              <div class="product__card-text">
+                <div class="product__evaluation-container">
+                  <p class="product__vendor-code">Vendor code: 00028</p>
+                  <div class="product__stars-container">
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                    <svg class="icon-Star orange" width="16" height="16">
+                      <use href="/images/icons.svg#icon-Star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="product__description">
+                  Dry food for dogs of all breeds Savory 5 kg (rabbit and duck)
+                </p>
+                <div class="product__price-container">
+                  <p class="product__price">346.00$</p>
+                  <p class="product__sale">450.43$</p>
+                </div>
+              </div>
+              <button type="button" class="buy-btn btn">Buy</button>
+            </li>
+          </ul>
+          <div class="product__controls">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <img src="/images/paw.png" alt="" class="paw paw-footer rotate-paw" />
+        <div class="footer__navigation">
+          <div class="footer__nav">
+            <a href="/">
+              <svg class="icon-logo-footer orange" width="192" height="40">
+                <use href="/images/icons.svg#icon-logo-footer"></use>
+              </svg>
+            </a>
+            <div class="footer__social">
+              <a href="#" class="inst">
+                <svg class="icon-instagram" width="40" height="40">
+                  <use href="/images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a href="#" class="facebook orange">
+                <svg class="icon-facebook" width="40" height="40">
+                  <use href="/images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </div>
+          </div>
+          <ul class="footer__menu">
+            <li>
+              <a href="/#less-talk-section" class="footer__link">Less talk</a>
+            </li>
+            <li>
+              <a href="/#services-section" class="footer__link">Services category</a>
+            </li>
+            <li>
+              <a href="/#happy-customer-section" class="footer__link">
+                Happy customer
+              </a>
+            </li>
+            <li>
+              <a href="/#contact-us-section" class="footer__link">Contact</a>
+            </li>
+          </ul>
+          <div class="footer__form">
+            <div class="footer__form-field input">
+              <label class="input__label" for="your-email-footer">
+                <svg class="icon-alternate-email orange" width="24" height="24">
+                  <use href="images/icons.svg#icon-alternate-email"></use>
+                </svg>
+              </label>
+              <input
+                class="input__control"
+                type="text"
+                name="your-email-footer"
+                id="your-email-footer"
+                placeholder="Your email"
+              />
+            </div>
+            <div class="footer__form-field input">
+              <label class="input__label visualy-hidden" for="your-cmc"> </label>
+              <input
+                class="input__control"
+                type="text"
+                name="your-cmc"
+                id="your-cmc"
+                placeholder="Your cmc"
+              />
+            </div>
+            <div class="modal-control">
+              <button type="submit" class="footer__btn btn">Contact us</button>
+              <p class="form-terms">
+                <input type="checkbox" />
+                I agree to the privacy policy
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__dog">
+          <img src="/images/footer_dog.png" alt="" class="footer-dog" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/sort.js"></script>
+    <script src="/js/mobile.js"></script>
+    <script src="/js/swiper-nutrition.js"></script>
+  </body>
+</html>

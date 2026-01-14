@@ -1,0 +1,182 @@
+.footer {
+  margin: 140px 0 0 0;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 18px 0 50px 0;
+    margin: 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: var(--peach-color);
+    position: relative;
+    padding: 14px 20px;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+      height: 237px;
+      padding: 32px 100px;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+      align-items: start;
+      gap: 136px;
+    }
+  }
+
+  &__nav {
+    display: contents;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: 0;
+      gap: 24px;
+    }
+  }
+
+  &__nav > a {
+    order: 1;
+
+    @media screen and (min-width: $bp-desktop) {
+      order: 0;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: 0;
+    gap: 16px;
+    white-space: nowrap;
+    align-items: center;
+    order: 2;
+
+    @media screen and (min-width: $bp-desktop) {
+      order: 0;
+      align-items: flex-start;
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: 8px;
+    order: 3;
+
+    @media screen and (min-width: $bp-desktop) {
+      order: 0;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: 0;
+    gap: 16px;
+    order: 4;
+
+    @media screen and (min-width: $bp-desktop) {
+      order: 0;
+    }
+  }
+
+  &__form-field {
+    display: flex;
+    align-items: center;
+    padding: 8px 24px;
+    height: 40px;
+  }
+
+  &__form-field .input__control {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-weight: 700;
+    }
+  }
+
+  &__link {
+    color: var(--main-text-color);
+    font-size: 16px;
+    line-height: 1.3;
+    letter-spacing: 0.05em;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 18px;
+    }
+  }
+
+  &__link:hover {
+    color: var(--main-brand-color);
+    font-weight: 700;
+  }
+
+  &__btn {
+    width: 126px;
+    height: 35px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 8px 24px;
+    font-size: 16px;
+  }
+
+  &__dog {
+    position: absolute;
+    width: 128px;
+    height: 145px;
+    top: -122px;
+    left: 116px;
+
+    @media screen and (min-width: $bp-desktop) {
+      top: -24px;
+      left: 1048px;
+    }
+  }
+
+  &__control {
+    gap: 16px;
+  }
+}
+
+.footer-dog {
+  width: 128px;
+  height: 145px;
+
+  @media screen and (min-width: $bp-desktop) {
+    width: 292px;
+    height: 305px;
+  }
+}
+
+.icon-logo-footer {
+  width: 92px;
+  height: 20px;
+
+  @media screen and (min-width: $bp-desktop) {
+    width: 192px;
+    height: 40px;
+  }
+}
+
+.icon-instagram,
+.icon-facebook {
+  width: 32px;
+  height: 32px;
+
+  @media screen and (min-width: $bp-desktop) {
+    width: 40px;
+    height: 40px;
+  }
+}

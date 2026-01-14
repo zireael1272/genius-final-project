@@ -1,0 +1,57 @@
+.btn {
+  background-color: var(--main-brand-color);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  height: 100%;
+  max-height: 53px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 100%;
+  padding: 16px 32px;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: var(--brand-color-hover);
+}
+
+.contact-btn {
+  display: none;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+    width: 100%;
+    max-width: 151px;
+  }
+}
+
+.explore-btn {
+  width: 100%;
+  max-width: 143px;
+  border-radius: 4px;
+  padding: 8px 24px;
+  font-size: 16px;
+
+  @media screen and (min-width: $bp-desktop) {
+    max-width: 171px;
+    border-radius: 8px;
+    padding: 16px 32px;
+    font-size: 18px;
+  }
+}
+
+.carousel-button {
+  display: none;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+    flex-shrink: 0;
+    border: none;
+    background: transparent;
+  }
+}
+
+.carousel-button.next {
+  transform: rotate(180deg);
+}

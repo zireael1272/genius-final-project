@@ -1,0 +1,166 @@
+.less-talk {
+  &__section {
+    padding: 20px 20px;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 20px 100px;
+    }
+  }
+
+  &__container {
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 84px;
+      padding: 24px 0;
+      margin: 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 40px;
+      width: 100%;
+      max-width: 640px;
+      margin: 131px 0;
+      flex-grow: 1;
+    }
+  }
+
+  &__dog {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      flex-grow: 1;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    width: 100%;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 52px;
+      width: 100%;
+      max-width: 420px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 22px;
+      line-height: 1.5;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__buttons-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.paw-learn-more-1 {
+  position: absolute;
+  margin-left: 171px;
+  margin-top: 70px;
+}
+
+.paw-learn-more-2 {
+  transform: rotate(-50deg);
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 320px;
+}
+
+.paw-learn-more-3 {
+  transform: rotate(65deg);
+  position: absolute;
+  margin-left: 420px;
+  margin-top: 260px;
+}
+
+.dog-learn-more {
+  position: absolute;
+  margin-top: 120px;
+}
+
+.video-learn-more {
+  position: absolute;
+  margin-left: 300px;
+  margin-top: 80px;
+}
+
+.video-learn-more-mobile {
+  width: 86px;
+  height: 72px;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: none;
+  }
+}
+
+.paw-less-talk-1 {
+  transform: scale(0.5) rotate(90deg);
+  top: -36px;
+  left: 280px;
+
+  @media screen and (min-width: $bp-desktop) {
+    left: -48px;
+    top: 124px;
+  }
+}
+
+.paw-less-talk-2 {
+  transform: scale(0.3);
+  top: 32px;
+  left: 280px;
+
+  @media screen and (min-width: $bp-desktop) {
+    top: 140px;
+    left: 1280px;
+    transform: scale(2);
+  }
+}
+
+.paw-less-talk-3 {
+  display: none;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+    top: 611px;
+    right: 207px;
+  }
+}
+
+.icon-less-arrow {
+  display: inline-block;
+  width: 48px;
+  height: 40px;
+  margin-left: 10px;
+  position: static;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: none;
+  }
+}
+
+.mobile-break {
+  display: block;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: none;
+  }
+}

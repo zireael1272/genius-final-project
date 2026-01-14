@@ -1,0 +1,50 @@
+.swiper-pagination {
+  position: static !important;
+  width: auto !important;
+  transform: none !important;
+  margin: 0 !important;
+  display: flex;
+}
+
+.swiper-pagination-bullet {
+  width: 32px;
+  height: 24px;
+  background: transparent;
+  opacity: 1;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.swiper-pagination-bullet:hover {
+  color: var(--main-brand-color);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--main-brand-color);
+  color: var(--white);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
+  margin: 0;
+  width: 32px;
+  height: 24px;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--main-text-color);
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: var(--main-brand-color);
+}
